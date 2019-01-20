@@ -13,10 +13,10 @@
     </mt-swipe>
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/newslist">
           <span class="mui-icon mui-icon-extra mui-icon-extra-new"></span>
           <div class="mui-media-body">新闻资讯</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -53,20 +53,21 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {};
   },
   created() {
-    this.getLunBo();
+    // this.getLunBo();
   },
   methods: {
-    getLunBo() {
-      // 没有对应的后端连接
-      // this.$http.get("http://vue.studyit.io/api/getlunbo").then(res => {
-      //   console.log(res);
-      // });
-    }
+    // getLunBo() {
+    //   // 没有对应的后端连接
+    //   this.$http.get("./newslist.json").then(res => {
+    //     console.log(res);
+    //   });
+    // }
   }
 };
 </script>
@@ -74,7 +75,7 @@ export default {
 <style lang="less" scoped>
 div.mint-swipe {
   width: 100%;
-  height: 200px;
+  height: 250px;
   .mint-swipe-item {
     img {
       width: 100%;

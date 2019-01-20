@@ -46,7 +46,7 @@ export default {
 <style lang="less" scoped>
 .container {
   .content {
-    margin-top: 40px;
+    padding: 40px 0;
     overflow-x: hidden;
   }
 }
