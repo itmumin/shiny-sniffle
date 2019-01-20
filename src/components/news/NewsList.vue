@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="newslist-container">
     <ul class="mui-table-view">
       <li class="mui-table-view-cell mui-media" v-for="item in msg" v-bind:key="item.id">
         <router-link :to="'/home/newslist/' + item.id">
@@ -47,7 +47,7 @@ export default {
 
 <style lang="less" scoped>
 ul.mui-table-view {
-    overflow-y: hidden;
+
   h1 {
     font-size: 14px;
     overflow: hidden;

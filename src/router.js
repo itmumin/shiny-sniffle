@@ -9,7 +9,6 @@ import newlistitem from './components/news/newlistitem.vue'
 
 var router = new VueRouter({
     routes: [
-        {path: '/', redirect: '/home'},
         {path: '/home', component: Home},
         {path: '/member', component: Member},
         {path: '/shopcar', component: ShopCar},
